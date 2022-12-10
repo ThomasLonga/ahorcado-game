@@ -9,25 +9,46 @@
       href="../assets/images/download.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../assets/css/style2.css" />
     <link rel="stylesheet" href="../assets/css/reset.css" />
-    <script src="../JS/ahorcado.js"></script>
+    <link rel="stylesheet" href="../assets/css/style2.css" />
 
     <title>Juego Ahorcado</title>
   </head>
   <body>
     <main class="main_container">
+      <a href="../index.html">
+        <img
+          class="boton_retroceso"
+          src="../assets/images/icons8-izquierda-en-círculo-2-100.png"
+          alt="flecha de retroceso"
+        />
+      </a>
       <section class="first_container">
-        <a href="../index.html">
-          <img
-            class="boton_retroceso"
-            src="../assets/images/icons8-izquierda-en-círculo-2-100.png"
-            alt="flecha de retroceso"
-            width="50px"
+        <div class="container_content">
+          <p id="output" class="guiones"></p>
+          <p class="parragrahp">Introduzca una letra</p>
+
+          <input
+            type="text"
+            class="caja_texto"
+            maxlength="palabras"
+            id="letra"
           />
-        </a>
-        <h1 class="titulo">SIUUUUUUUUUUUUUUUU</h1>
+
+          <button id="calcular" class="boton_evaluar">Evaluar Letras</button>
+        </div>
+        <div class="imagen_texto">
+          <div id="ahorcado" class="container_ahorcado"></div>
+          <div id="ganador">
+            <p>Has Ganado!</p>
+          </div>
+
+          <div id="perdedor">
+            <p>Has perdido!</p>
+          </div>
+        </div>
       </section>
+      <script src="../JS/ahorcado.js"></script>
     </main>
   </body>
 </html>
